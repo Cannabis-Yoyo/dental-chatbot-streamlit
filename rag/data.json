@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "name": "Dental Chatbot Knowledge Base",
+    "version": "1.0.0",
+    "last_updated": "2025-10-17",
+    "author": "Dental Chatbot Team"
+  },
+  "treatments": {
+    "crowns": {
+      "title": "Dental Crowns (Tooth Crowning)",
+      "description": "A dental crown is a tooth-shaped cap placed over a damaged, decayed, or cosmetically imperfect tooth to restore its shape, strength, function and appearance. Crowns fully encase the visible portion of a tooth above the gumline.",
+      "indications": [
+        "Large dental decay where a filling would be insufficient",
+        "Fractured or cracked tooth that cannot be restored with a filling alone",
+        "After root canal therapy (to protect the weakened tooth)",
+        "Significant wear or erosion of the tooth structure",
+        "To improve cosmetic appearance of a discolored, misshapen, or small tooth",
+        "To cover a dental implant abutment"
+      ],
+      "contraindications": [
+        "Insufficient remaining tooth structure without possibility of buildup",
+        "Active untreated periodontal (gum) disease",
+        "Poor oral hygiene leading to high risk of recurrent decay",
+        "Severe uncontrolled medical conditions where elective dental treatment is postponed"
+      ],
+      "procedure_steps": [
+        "Initial assessment and X-rays to evaluate tooth roots and surrounding bone",
+        "Local anesthesia is applied to numb the tooth and surrounding tissue",
+        "Removal of decay and shaping of the tooth so the crown will fit (tooth preparation)",
+        "If necessary, build-up of core material to replace missing tooth structure",
+        "Take an impression or digital scan of the prepared tooth and opposing teeth",
+        "A temporary crown is placed to protect the tooth while the permanent crown is fabricated",
+        "The permanent crown (porcelain, zirconia, ceramic, or metal-ceramic) is cemented in a second appointment; fit and occlusion adjusted"
+      ],
+      "anesthesia": "Local anesthesia is commonly used. Sedation options (nitrous oxide or oral/IV sedation) may be offered for anxious patients.",
+      "typical_duration": "Preparation visit: 45–90 minutes. Final cementation visit: 30–60 minutes. If using a same-day CAD/CAM system, a single-visit crown is possible (approx. 90–150 minutes).",
+      "recovery_and_expected_symptoms": [
+        "Mild sensitivity to temperature or pressure for a few days is common",
+        "Discomfort at the injection site that resolves in 24–48 hours",
+        "Temporary crowns can feel bulkier; final crown should feel natural"
+      ],
+      "aftercare_and_home_instructions": [
+        "Avoid sticky or very hard foods for 24–48 hours after cementation",
+        "Maintain good oral hygiene: brush twice daily and floss gently around the crown margin",
+        "If temporary crown dislodges, keep it clean and return to the clinic promptly",
+        "Use a fluoride toothpaste and consider a fluoride mouthwash if recommended",
+        "Report persistent pain, signs of infection (swelling, fever), or loose crown"
+      ],
+      "risks_and_complications": [
+        "Sensitivity or pain after cementation",
+        "Allergic reaction to crown material (rare)",
+        "Crown loosening or dislodgement",
+        "Marginal leakage leading to recurrent decay under the crown",
+        "Fracture of porcelain in porcelain-fused-to-metal crowns",
+        "Gum irritation or recession near the crown margin"
+      ],
+      "alternatives": [
+        "Large filling or onlay (if sufficient tooth structure remains)",
+        "Extraction and replacement with an implant or bridge (if tooth is non-restorable)",
+        "Cosmetic veneers (for front teeth with primarily cosmetic concerns)"
+      ],
+      "follow_up": "Check-up 1–2 weeks after cementation to verify comfort and occlusion. Routine dental exams every 6 months.",
+      "notes_for_chatbot_response": "If user reports 'crowing needed' treat as potential crown indication; ask clarifying questions: which tooth, pain/infection present, prior root canal, preference for material, and offer to book an assessment and X-ray."
+    },
+    "scaling": {
+      "title": "Scaling and Polishing (Professional Dental Cleaning)",
+      "description": "Scaling and polishing is a professional dental cleaning procedure that removes plaque, tartar (calculus), and stains from the teeth above and below the gumline. It helps treat and prevent gum disease and maintain oral hygiene.",
+      "indications": [
+        "Visible plaque and tartar buildup",
+        "Gingival inflammation (redness, swelling, bleeding)",
+        "Halitosis (bad breath) caused by poor oral hygiene",
+        "Preventive care as part of a routine 6-month checkup",
+        "Supportive periodontal therapy after gum treatment"
+      ],
+      "contraindications": [
+        "Uncontrolled bleeding disorders (consult physician before treatment)",
+        "Recent oral surgery or acute oral infection (may need postponement)"
+      ],
+      "procedure_steps": [
+        "Oral examination and periodontal charting (pocket depths, bleeding points)",
+        "Use of ultrasonic scaler to remove large deposits of calculus",
+        "Hand scaling instruments for fine removal of tartar from root surfaces",
+        "Polishing with a rubber cup and prophylaxis paste to remove stains and smooth surfaces",
+        "Fluoride application if indicated"
+      ],
+      "anesthesia": "Usually performed without anesthesia. Local anesthetic gel or local injections may be used for patients with significant sensitivity or deep scaling (root planing).",
+      "typical_duration": "30–60 minutes for routine cleaning; deeper scaling (root planing) may require multiple visits of 45–90 minutes each.",
+      "recovery_and_expected_symptoms": [
+        "Mild gum tenderness and sensitivity for 24–48 hours",
+        "Possible light bleeding for sensitive gums",
+        "Temporary increase in tooth sensitivity to cold"
+      ],
+      "aftercare_and_home_instructions": [
+        "Resume regular gentle brushing and flossing after a few hours",
+        "Use desensitizing toothpaste if sensitivity occurs",
+        "Avoid very hot/cold foods for a few hours if sensitivity is present",
+        "Follow any additional periodontal maintenance schedule recommended by the clinician"
+      ],
+      "risks_and_complications": [
+        "Temporary gum discomfort or bleeding",
+        "Root sensitivity (usually temporary)",
+        "Rarely, bacteremia in patients with certain heart conditions (antibiotic prophylaxis may be indicated if recommended by physician)"
+      ],
+      "alternatives": [
+        "More frequent maintenance appointments",
+        "Adjunctive antimicrobial rinses or localized antibiotic therapy"
+      ],
+      "follow_up": "Routine check and hygiene recall every 3–6 months depending on risk; periodontal cases require individualized maintenance."
+    },
+    "fillings": {
+      "title": "Dental Fillings (Restorations)",
+      "description": "A dental filling restores a tooth damaged by decay back to its normal function and shape. The dentist removes the decayed tooth tissue and fills the cavity with a suitable restorative material.",
+      "indications": [
+        "Cavities (dental caries)",
+        "Small fractures or chipped teeth",
+        "Replacement of old or failed fillings"
+      ],
+      "materials": [
+        "Composite resin (tooth-colored) – aesthetic, bonds to tooth structure",
+        "Amalgam (metal) – durable, used in back teeth",
+        "Glass ionomer – releases fluoride, used in certain clinical situations"
+      ],
+      "procedure_steps": [
+        "Assessment and X-rays as needed",
+        "Local anesthesia to numb the area if required",
+        "Remove decayed tissue and shape the cavity",
+        "Place the chosen restorative material in increments (for composite), curing with light if required",
+        "Adjust occlusion and polish the restoration"
+      ],
+      "anesthesia": "Local anesthesia commonly used for comfort during the procedure.",
+      "typical_duration": "20–60 minutes depending on size and location of the cavity.",
+      "recovery_and_expected_symptoms": [
+        "Temporary numbness until anesthesia wears off",
+        "Mild sensitivity to pressure or temperature for a few days"
+      ],
+      "aftercare_and_home_instructions": [
+        "Avoid chewing on the filled tooth until numbness wears off",
+        "Practice good oral hygiene to prevent recurrent decay",
+        "Report sharp pain or prolonged sensitivity (may indicate high spot or pulp irritation)"
+      ],
+      "risks_and_complications": [
+        "Post-operative sensitivity",
+        "Fillings may wear, chip, or leak over time",
+        "Possible need for root canal if pulp becomes inflamed (rare)"
+      ],
+      "alternatives": [
+        "Onlays or crowns for larger lesions",
+        "Extraction and replacement (in non-restorable cases)"
+      ],
+      "follow_up": "Routine check at the next dental visit; monitor for wear or recurrent decay."
+    },
+    "implants": {
+      "title": "Dental Implants (Tooth Replacement with Implants)",
+      "description": "A dental implant is a titanium (or titanium alloy) screw placed into the jawbone to serve as an artificial tooth root. Once integrated with bone (osseointegration), it can support crowns, bridges, or overdentures to replace missing teeth.",
+      "indications": [
+        "Replacement of one or more missing teeth",
+        "To support a bridge where adjacent teeth are healthy but patient prefers implant solution",
+        "To stabilize dentures for improved retention and comfort",
+        "When preservation of adjacent natural teeth is desired"
+      ],
+      "contraindications_and_cautions": [
+        "Insufficient bone volume without grafting",
+        "Uncontrolled systemic conditions (e.g., uncontrolled diabetes, recent heart attack) – evaluate with physician",
+        "Heavy smoking or poor oral hygiene that impair healing",
+        "Certain medications (e.g., high-dose bisphosphonates) may increase risk of complications"
+      ],
+      "treatment_steps_overview": [
+        "Comprehensive assessment: clinical exam, cone-beam CT or periapical X-rays, treatment planning",
+        "If needed, preparatory procedures: extractions, bone grafts, sinus lift",
+        "Surgical placement of implant fixture into bone under local anesthesia (with or without sedation)",
+        "Healing period (osseointegration) typically 3–6 months depending on bone quality and location",
+        "Placement of abutment and impression or digital scan for final restoration",
+        "Delivery of final crown, bridge, or denture"
+      ],
+      "anesthesia_and_sedation": "Local anesthesia is used; options for conscious sedation (oral or IV) or nitrous oxide are available for anxious patients or complex surgeries.",
+      "typical_duration": "Surgical placement: 30–90 minutes per implant (varies). Overall treatment can take 3–9 months depending on grafting and healing.",
+      "recovery_and_expected_symptoms": [
+        "Post-op swelling, bruising, and mild discomfort for 2–5 days",
+        "Minor bleeding for 24 hours",
+        "Initial prosthesis may be provisional until final load"
+      ],
+      "aftercare_and_home_instructions": [
+        "Soft diet for several days; avoid chewing on the surgical site",
+        "Use prescribed analgesics and anti-inflammatory medications as directed",
+        "Maintain oral hygiene: gentle brushing, avoid aggressive rinsing first 24 hours; saltwater rinses after 24 hours",
+        "Do not smoke for at least 2 weeks (ideally permanently quit for long-term success)",
+        "Attend scheduled follow-ups to monitor osseointegration"
+      ],
+      "risks_and_complications": [
+        "Infection at the implant site",
+        "Failure of osseointegration (implant loosens and may need removal)",
+        "Nerve injury resulting in numbness or tingling (rare)",
+        "Sinus complications for upper jaw implants (sinus lift may be required)",
+        "Peri-implantitis (inflammatory bone loss around implant) if hygiene is poor"
+      ],
+      "alternatives": [
+        "Fixed bridge (requires preparation of adjacent teeth)",
+        "Removable partial denture",
+        "No treatment (with consideration of consequences like shifting teeth)"
+      ],
+      "follow_up": "Regular follow-ups: suture removal (if applicable), periodic radiographs during healing, maintenance visits every 3–6 months initially and then 6–12 months for long term",
+      "notes_for_chatbot_response": "If the user asks about implants, the chatbot should collect: medical history, smoking status, any medications (e.g., bisphosphonates), and whether extractions or bone grafting may be needed before recommending a consult."
+    }
+  },
+  "faqs": [
+    {
+      "question": "What causes tooth sensitivity?",
+      "answer": "Tooth sensitivity is commonly caused by exposure of dentin due to enamel erosion, gum recession exposing the root surface, cracked teeth, or recent dental procedures. Management includes desensitizing toothpaste, fluoride treatments, bonding agents, or addressing the underlying cause (restoration or gum treatment)."
+    },
+    {
+      "question": "How often should I get a dental cleaning?",
+      "answer": "Most patients benefit from a professional cleaning every 6 months. However, patients with periodontal disease or high risk of cavities may need hygiene visits every 3–4 months. Your dentist will recommend a personalized schedule."
+    },
+    {
+      "question": "Is a dental crown painful?",
+      "answer": "The procedure is usually performed under local anesthesia, so you should not feel pain during the tooth preparation. Mild soreness or sensitivity can occur after the anesthetic wears off, but this typically resolves within a few days and is manageable with over-the-counter pain relief."
+    },
+    {
+      "question": "How long does a dental implant last?",
+      "answer": "With good oral hygiene, proper maintenance, and regular dental visits, dental implants can last decades and often a lifetime. Success depends on factors like bone quality, smoking, systemic health, and hygiene."
+    },
+    {
+      "question": "Can a crown be done in one visit?",
+      "answer": "Yes, some clinics use same-day CAD/CAM systems (e.g., CEREC) to design, mill, and place a crown in a single appointment. Otherwise, traditional crowns typically require two visits with a temporary crown placed in between."
+    },
+    {
+      "question": "What should I do if my crown falls off?",
+      "answer": "Keep the crown if possible, keep the area clean, and contact your dentist promptly. Avoid chewing on that side. Temporary dental cement available at pharmacies can be used as a short-term measure until you see your dentist."
+    },
+    {
+      "question": "Are dental X-rays safe?",
+      "answer": "Modern dental X-rays use very low radiation doses and are generally considered safe. Protective lead aprons and thyroid collars are used when appropriate. The diagnostic benefit usually outweighs the minimal radiation risk."
+    },
+    {
+      "question": "How do I prepare for a dental implant consultation?",
+      "answer": "Bring a list of your medical history, current medications, previous dental records if available, and any recent dental X-rays. Expect a clinical exam and imaging (periapical or cone-beam CT) to assess bone volume and plan treatment."
+    },
+    {
+      "question": "What is peri-implantitis?",
+      "answer": "Peri-implantitis is an inflammatory condition affecting the soft and hard tissues around a dental implant, often caused by bacterial plaque. It can lead to bone loss and implant failure if not treated. Good hygiene and regular maintenance reduce risk."
+    },
+    {
+      "question": "Will my insurance cover implants or crowns?",
+      "answer": "Coverage varies widely by insurer and plan. Many dental insurance policies cover a portion of crown or implant-related costs, but often with limitations. Check with your insurance provider or our clinic staff for pre-treatment estimates."
+    },
+    {
+      "question": "Can I get dental treatment during pregnancy?",
+      "answer": "Routine dental care and urgent treatment are generally safe during pregnancy, especially after the first trimester. Elective procedures are often postponed until after delivery. Always inform the dentist about your pregnancy and consult your physician if needed."
+    }
+  ],
+  "post_treatment": {
+    "general_guidelines": "After any dental procedure follow these general guidelines: rest for the remainder of the day, avoid strenuous exercise for 24 hours, do not smoke or use tobacco for at least 48–72 hours (longer if possible), and maintain gentle oral hygiene.",
+    "crowns": {
+      "first_24_hours": [
+        "Avoid very hot, cold or hard foods until numbness wears off",
+        "Stick to soft foods if the tooth feels sensitive",
+        "Be careful while flossing around a new crown; slide the floss out rather than lift to avoid dislodging a temporary"
+      ],
+      "first_two_weeks": [
+        "Temporary crowns may require avoidance of sticky foods",
+        "Permanent crown may feel slightly different; slight adjustments can be made at follow-up"
+      ],
+      "warning_signs": [
+        "Increasing or severe pain",
+        "Persistent sensitivity beyond 2 weeks",
+        "Swelling, fever or signs of infection",
+        "Loose or dislodged crown"
+      ]
+    },
+    "scaling": {
+      "immediate": [
+        "Expect mild gum tenderness and possible light bleeding for 24–48 hours",
+        "Gentle brushing and flossing recommended; resume normal hygiene after a few hours"
+      ],
+      "additional_advice": [
+        "Use desensitizing toothpaste if needed",
+        "Follow periodontal maintenance schedule if prescribed"
+      ]
+    },
+    "fillings": {
+      "immediate": [
+        "Avoid chewing on the area until anesthesia has worn off",
+        "Sensitivity to temperature may last a few days"
+      ],
+      "if_prolonged": [
+        "If severe pain or sharp pain on biting occurs, return for evaluation (might indicate high spot or crack)"
+      ]
+    },
+    "implants": {
+      "first_week": [
+        "Use ice packs intermittently for the first 24 hours to control swelling",
+        "Soft diet recommended; avoid chewing on the surgical site",
+        "Do not rinse vigorously for first 24 hours; after that, use gentle saltwater rinses"
+      ],
+      "first_month": [
+        "Attend scheduled reviews for suture removal and healing checks",
+        "Report increasing pain, pus, or mobility of the implant"
+      ],
+      "long_term": [
+        "Maintain excellent oral hygiene around implants",
+        "Regular professional cleaning and check-ups to detect early signs of peri-implant disease"
+      ]
+    }
+  },
+  "clinic_info": {
+    "name": "NeoImplant Dental Studio",
+    "tagline": "Advanced implant care with a human touch",
+    "address": {
+      "main_branch": "Suite 12, Health Tower, DHA Phase 5, Karachi",
+      "map_link_note": "Add Google Maps link in clinic UI"
+    },
+    "branches": [
+      {
+        "name": "NeoImplant - DHA",
+        "address": "Suite 12, Health Tower, DHA Phase 5, Karachi",
+        "phone": "+92 300 1234567",
+        "email": "dha@neoimplant.com",
+        "hours": {
+          "monday": "09:00-18:00",
+          "tuesday": "09:00-18:00",
+          "wednesday": "09:00-18:00",
+          "thursday": "09:00-18:00",
+          "friday": "09:00-16:00",
+          "saturday": "10:00-14:00",
+          "sunday": "Closed"
+        }
+      },
+      {
+        "name": "NeoImplant - Clifton",
+        "address": "Unit B4, Clifton Plaza, Clifton, Karachi",
+        "phone": "+92 321 7654321",
+        "email": "clifton@neoimplant.com",
+        "hours": {
+          "monday": "10:00-19:00",
+          "tuesday": "10:00-19:00",
+          "wednesday": "10:00-19:00",
+          "thursday": "10:00-19:00",
+          "friday": "10:00-17:00",
+          "saturday": "10:00-14:00",
+          "sunday": "Closed"
+        }
+      }
+    ],
+    "appointments": {
+      "how_to_book": "Book via chatbot, phone call, or our website. For online booking use the 'Book Appointment' button and choose branch, service and available slot.",
+      "cancellation_policy": "Cancel or reschedule at least 24 hours before the appointment to avoid cancellation fees. Urgent changes should be communicated by phone.",
+      "walk_in_policy": "Walk-ins are accepted based on availability; urgent/emergency cases are prioritized."
+    },
+    "emergency": {
+      "after_hours_contact": "+92 300 7654320 (Call for urgent dental emergencies)",
+      "urgent_advice": "For severe uncontrolled bleeding, high fever, or trauma, go to the nearest emergency department immediately and inform the clinic as soon as possible."
+    },
+    "payments_and_insurance": {
+      "payment_methods": ["Cash", "Bank Transfer", "Debit/Credit Card"],
+      "insurance": "We accept a range of dental insurance providers. Please contact reception to verify coverage. Estimates for major work (implants, crowns) are provided on request."
+    },
+    "sterilization_and_safety": {
+      "summary": "We follow standard infection control protocols consistent with international guidelines: instrument sterilization in autoclaves, single-use disposables where applicable, surface disinfection between patients, and staff PPE.",
+      "covid_policy_note": "Patients with respiratory symptoms should reschedule unless urgent; staff follow current public health guidelines."
+    },
+    "team": [
+      {
+        "name": "Dr. Fatima Khan",
+        "role": "Senior Implantologist",
+        "qualifications": "BDS, MSc Implant Dentistry",
+        "specialties": ["Dental implants", "Prosthodontics", "Full mouth rehabilitation"]
+      },
+      {
+        "name": "Dr. Ahmed Raza",
+        "role": "Periodontist",
+        "qualifications": "BDS, MClinDent (Periodontology)",
+        "specialties": ["Gum disease management", "Scaling & root planing"]
+      }
+    ],
+    "teleconsultation": {
+      "available": true,
+      "how_it_works": "Book a teleconsult through the chatbot. You will receive a secure video link and a short form to fill in medical history and recent photos of the mouth if possible.",
+      "fees": "Teleconsult fees apply; simple triage may be free depending on promotional offers."
+    },
+    "privacy_and_consent": {
+      "summary": "All patient information is stored securely in accordance with applicable local regulations. Consent is obtained before procedures and before sending SMS/email reminders. Data is used only for treatment, appointments, and clinic communications.",
+      "data_retention_note": "Patient data is retained as required by local healthcare regulations; contact reception for data access or deletion requests."
+    }
+  },
+  "admin_notes": {
+    "how_to_update": "Admin can upload a new JSON file via the Admin Dashboard. After upload, run the RAG index rebuild to refresh embeddings.",
+    "index_rebuild_command_example": "python backend/rag/build_index.py",
+    "recommended_chunking": "When embedding, split long sections into 200-400 word chunks to improve retrieval relevance."
+  }
+}

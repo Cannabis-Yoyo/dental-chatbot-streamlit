@@ -1,0 +1,3 @@
+[client]
+# Disable the auto-discovery of multipage apps
+showSidebarNavigation = false

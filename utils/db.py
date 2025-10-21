@@ -16,7 +16,10 @@ def get_karachi_time():
 
 Base = declarative_base()
 
-# Define Models (same as original)
+# -----------------------------
+# DATABASE MODELS
+# -----------------------------
+
 class User(Base):
     __tablename__ = "users"
     
@@ -97,11 +100,15 @@ class Appointment(Base):
     
     user = relationship("User", back_populates="appointments")
 
-# Database connection
+# -----------------------------
+# DATABASE CONNECTION
+# -----------------------------
+
 @st.cache_resource
 def get_engine():
     """Create database engine from Streamlit secrets"""
-    db_url = f"postgresql://{st.secrets['DB_USER']}:{st.secrets['DB_PASS']}@{st.secrets['DB_HOST']}:{st.secrets['DB_PORT']}/{st.secrets['DB_NAME']}"
+    db = st.secrets["database"]
+    db_url = f"postgresql://{db['DB_USER']}:{db['DB_PASS']}@{db['DB_HOST']}:{db['DB_PORT']}/{db['DB_NAME']}"
     return create_engine(db_url, pool_pre_ping=True)
 
 def get_session():
@@ -115,8 +122,11 @@ def init_database():
     engine = get_engine()
     Base.metadata.create_all(engine)
 
+# -----------------------------
+# UTILITY FUNCTIONS
+# -----------------------------
+
 def check_profile_complete(user_id: int) -> bool:
-    """Check if user profile is complete"""
     session = get_session()
     try:
         profile = session.query(UserProfile).filter(UserProfile.user_id == user_id).first()
@@ -126,7 +136,6 @@ def check_profile_complete(user_id: int) -> bool:
         session.close()
 
 def get_user_profile_dict(user_id: int) -> dict:
-    """Get complete user profile as dictionary"""
     session = get_session()
     try:
         user = session.query(User).filter(User.id == user_id).first()
@@ -136,31 +145,27 @@ def get_user_profile_dict(user_id: int) -> dict:
         profile = session.query(UserProfile).filter(UserProfile.user_id == user_id).first()
         clinical = session.query(UserClinicalInfo).filter(UserClinicalInfo.user_id == user_id).first()
         
-        profile_data = {}
-        if profile:
-            profile_data = {
-                "phone_number": profile.phone_number,
-                "date_of_birth": str(profile.date_of_birth) if profile.date_of_birth else None,
-                "gender": profile.gender,
-                "address": profile.address
-            }
+        profile_data = {
+            "phone_number": profile.phone_number if profile else None,
+            "date_of_birth": str(profile.date_of_birth) if profile and profile.date_of_birth else None,
+            "gender": profile.gender if profile else None,
+            "address": profile.address if profile else None,
+        }
         
-        clinical_data = {}
-        if clinical:
-            clinical_data = {
-                "allergies": clinical.allergies,
-                "current_medications": clinical.current_medications,
-                "past_dental_procedures": clinical.past_dental_procedures,
-                "current_dental_issues": clinical.current_dental_issues,
-                "last_dental_visit": str(clinical.last_dental_visit) if clinical.last_dental_visit else None
-            }
+        clinical_data = {
+            "allergies": clinical.allergies if clinical else None,
+            "current_medications": clinical.current_medications if clinical else None,
+            "past_dental_procedures": clinical.past_dental_procedures if clinical else None,
+            "current_dental_issues": clinical.current_dental_issues if clinical else None,
+            "last_dental_visit": str(clinical.last_dental_visit) if clinical and clinical.last_dental_visit else None,
+        }
         
         return {
             "id": user.id,
             "email": user.email,
             "full_name": user.full_name,
             "profile": profile_data,
-            "clinical_info": clinical_data
+            "clinical_info": clinical_data,
         }
     finally:
         session.close()
